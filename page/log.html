@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<img src="logo.png" alt="Your Logo" />
+ <title>Password</title>
+ <style>
+  body {
+   background-color: lightblue;
+   padding: 30px;
+  }
+ </style>
+ <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "richardboucher") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+ </script>
+</head>
+<body>
+
+ <p> <p style="font-size: 30pt;">Password:</p><input id="passwordBox" type="password"/></p>
+ <a href="https://simonpierreboucher.github.io/hedorate/Simply-Docs-main/index.html" onclick="return checkPassword();">
+ <p> <p style="font-size: 20pt;">Cliquez ici pour vous connecter</p> 
+ </a>
+</body>
+</html>
